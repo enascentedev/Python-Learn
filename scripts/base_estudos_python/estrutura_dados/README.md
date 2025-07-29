@@ -20,4 +20,4 @@
 
 ## 📚 Referências oficiais
 
-- [Documentação Python 3.10.10](https://docs.python.org/3.10/)
+- [Documentação Python 3.10.18](https://docs.python.org/3.10/tutorial/datastructures.html)
