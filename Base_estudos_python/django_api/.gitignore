@@ -1,0 +1,62 @@
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários de sistema
+.DS_Store
+Thumbs.db
+
+# Logs e relatórios
+*.log
+*.out
+
+# Arquivos de testes
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Arquivos de build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Arquivos Jupyter Notebook
+.ipynb_checkpoints/
+
+# Configurações locais do VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Arquivos de ambientes e secrets
+.env
+.env.*
+
+# Arquivos de ferramentas de linting e formatação
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Arquivos de ferramentas de doc (opcional)
+_site/
+docs/_build/
+
+# Outros
+*.sqlite3
