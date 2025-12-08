@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribuição / pacotes
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Logs e arquivos temporários
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.tmp
+*.bak
+*.DS_Store
+*.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Ambientes virtuais
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configurações de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de banco de dados locais
+*.db
+*.sqlite3
+
+# Configurações de ambiente (não versionar)
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Outras pastas específicas
+__pypackages__/

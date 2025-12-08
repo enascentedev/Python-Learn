@@ -1,0 +1,103 @@
+## select Distinct = traz informações não repetidas 
+
+## OPERADOr - DESCRIÇÃO
+=             IGUAL
+>             MAIOR QUE
+<             MENOR QUE
+>=            MAIOR QUE OU IGUAL
+<=            MENOR QUE OU IGUAL
+<>            DIFERENTE DE
+AND           OPERADOR LÓGICO E
+OR            OPERADOR LÓGICO OU
+*/
+
+## WHERE = é o filtro , no exemplo abaixo selecionamos todas as informações * da tabela person.person
+que tenham  LastName = 'miller' AND FirstName = 'anna'
+
+SELECT *
+FROM person.person
+WHERE LastName = 'miller' AND FirstName = 'anna'
+
+## COUNT = usada para contar o número de linhas em um conjunto de resultados. Ele é muito útil para responder perguntas como:
+Quantos registros existem em uma tabela?
+Quantos pedidos foram feitos por um cliente?
+Quantas colunas têm valor diferente de NULL?
+
+SELECT COUNT(*) FROM tabela;
+
+--Isso retorna o número total de linhas, incluindo as que têm valores NULL.
+
+## TOP = é usado em SQL Server para limitar a quantidade de linhas retornadas em uma consulta. 
+Ele é muito útil quando você quer ver apenas os primeiros registros de um conjunto de dados 
+como os 10 mais recentes, os 5 maiores valores
+
+SELECT TOP 5 *
+FROM Alunos;
+
+Retorna os primeiros 5 registros da tabela Alunos (ordem não garantida sem ORDER BY).
+ 
+## ORDER BY = é usado em SQL para ordenar os resultados de uma consulta, de acordo com uma ou mais colunas. É um dos comandos mais usados quando queremos ver os dados organizados
+
+SELECT Nome
+FROM Alunos
+ORDER BY Nome ASC;
+
+Ordenar nomes em ordem alfabética
+
+## BETWEEN = é usado para filtrar valores dentro de um intervalo — seja de números, datas ou até texto (em ordem alfabética).
+Ele é muito usado por ser mais legível do que escrever múltiplas condições com >= e <=
+
+SELECT * FROM Produtos
+WHERE Preco BETWEEN 10 AND 50;
+
+Retorna produtos com preços entre 10 e 50
+
+## IN = O comando IN é usado em SQL para filtrar registros cujo valor está dentro de uma lista específica
+
+SELECT * FROM Alunos
+WHERE Nome IN ('João', 'Maria', 'Carlos');
+
+Retorna apenas os alunos com nome João, Maria ou Carlos
+
+## LIKE = é usado em SQL para fazer comparações parciais de texto, ou seja, buscar padrões dentro de strings. 
+Ele é muito útil para encontrar valores que "contêm", "começam com", ou "terminam com" determinados caracteres
+
+SELECT * FROM Arquivos
+WHERE NomeArquivo LIKE '%.pdf';
+Retorna arquivos que terminam com .pdf
+
+SELECT * FROM Produtos
+WHERE Nome LIKE '%sabão%';
+Retorna produtos que contêm "sabão" no nome (em qualquer posição)
+
+## MIN(coluna)
+Retorna o menor valor encontrado na coluna.
+
+Ignora valores NULL.
+
+Usa índice se a coluna for indexada.
+
+SELECT MIN(Preco) FROM Produtos;
+
+## MAX(coluna)
+Retorna o maior valor encontrado na coluna.
+
+Ignora valores NULL.
+Usa índice se a coluna for indexada.
+
+SELECT MAX(DataVenda) FROM Vendas;
+
+
+## SUM(coluna)
+Retorna a soma total dos valores da coluna.
+
+Ignora valores NULL.
+
+SELECT SUM(Quantidade) FROM Estoque;
+
+## AVG(coluna)
+Retorna a média aritmética dos valores da coluna.
+Ignora valores NULL.
+Resultado é decimal, mesmo se a coluna for inteira.
+
+SELECT AVG(Salario) FROM Funcionarios;
