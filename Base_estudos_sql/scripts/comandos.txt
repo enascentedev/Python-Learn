@@ -1,0 +1,3 @@
+Comentar linhas selecionadas → Ctrl + K, Ctrl + C
+
+Descomentar linhas selecionadas → Ctrl + K, Ctrl + U

@@ -1,0 +1,7 @@
+pip install django djangorestframework django-cors-header
+
+## comandos django 
+
+# django Instala o framework Django principal, que permite criar aplicações web de forma rápida, organizada e segura.
+# djangorestframework	Instala o Django REST Framework (DRF), que é uma extensão do Django para criar APIs RESTful com facilidade. Ele adiciona recursos como serialização de dados, autenticação, permissões, etc.
+# django-cors-headers	Permite configurar CORS (Cross-Origin Resource Sharing). Isso é essencial quando o front-end (por exemplo, React ou Flutter Web) estiver hospedado em outro domínio e precisa acessar sua API Django.

@@ -1,0 +1,98 @@
+🔷 Estrutura da view
+
+CREATE VIEW
+Define uma view, que é uma "tabela virtual" baseada em uma query.
+📚 https://learn.microsoft.com/sql/t-sql/statements/create-view-transact-sql
+
+🔷 Blocos e organização
+
+WITH (CTE – Common Table Expression)
+Define uma subquery nomeada temporária, usada para organizar a lógica em partes.
+📚 https://learn.microsoft.com/sql/t-sql/queries/with-common-table-expression-transact-sql
+
+UNION
+Junta os resultados de duas queries com mesmas colunas, removendo duplicatas.
+📚 https://learn.microsoft.com/sql/t-sql/language-elements/set-operators-union-transact-sql
+
+Comentários (-- e /**/)
+Explicações embutidas no código, ignoradas pelo SQL Server.
+📚 https://learn.microsoft.com/sql/t-sql/language-elements/comments-transact-sql
+
+🔷 Seleção de dados
+
+SELECT
+Define as colunas a serem retornadas.
+📚 https://learn.microsoft.com/sql/t-sql/queries/select-transact-sql
+
+DISTINCT
+Elimina registros duplicados do resultado.
+📚 https://learn.microsoft.com/sql/t-sql/queries/select-transact-sql#distinct
+
+Aliases (AS)
+Dá apelidos temporários para colunas ou tabelas.
+📚 https://learn.microsoft.com/sql/t-sql/queries/from-transact-sql#alias
+
+🔷 Junções de tabelas
+
+LEFT JOIN
+Retorna todas as linhas da tabela à esquerda e combina com a da direita, se existir.
+📚 https://learn.microsoft.com/sql/t-sql/queries/from-transact-sql#left-outer-join
+
+FULL OUTER JOIN
+Retorna todas as linhas da esquerda e da direita, mesmo que não tenham correspondência.
+📚 https://learn.microsoft.com/sql/t-sql/queries/from-transact-sql#full-outer-join
+
+CROSS JOIN
+Faz o produto cartesiano entre duas tabelas (todas as combinações possíveis).
+📚 https://learn.microsoft.com/sql/t-sql/queries/from-transact-sql#cross-join
+
+🔷 Filtros e condições
+
+WHERE
+Filtra linhas com base em condições.
+📚 https://learn.microsoft.com/sql/t-sql/queries/select-transact-sql#where
+
+IS NOT NULL
+Verifica se um valor não é nulo.
+📚 https://learn.microsoft.com/sql/t-sql/language-elements/is-null-transact-sql
+
+LIKE + UPPER
+Faz comparação textual (com curingas) e força letras maiúsculas para comparação.
+📚 LIKE → https://learn.microsoft.com/sql/t-sql/language-elements/like-transact-sql
+📚 UPPER → https://learn.microsoft.com/sql/t-sql/functions/string-functions-transact-sql#upper
+
+COLLATE
+Define regras de comparação de texto (acentos, maiúsculas etc.).
+📚 https://learn.microsoft.com/sql/t-sql/statements/collations
+
+🔷 Agregações e cálculos
+
+SUM()
+Soma valores de uma coluna.
+📚 https://learn.microsoft.com/sql/t-sql/functions/sum-transact-sql
+
+ROUND()
+Arredonda um número para um número fixo de casas decimais.
+📚 https://learn.microsoft.com/sql/t-sql/functions/round-transact-sql
+
+CAST()
+Converte um valor para outro tipo (ex: de money para float).
+📚 https://learn.microsoft.com/sql/t-sql/functions/cast-and-convert-transact-sql
+
+YEAR()
+Extrai o ano de uma data.
+📚 https://learn.microsoft.com/sql/t-sql/functions/date-and-time-functions-transact-sql#year
+
+IIF()
+Condicional simplificado: IIF(condição, valor_se_verdadeiro, valor_se_falso)
+📚 https://learn.microsoft.com/sql/t-sql/functions/logical-functions-iif-transact-sql
+
+🔷 Agrupamento e resultado final
+
+GROUP BY
+Agrupa os resultados para funções de agregação (SUM, COUNT, etc.).
+📚 https://learn.microsoft.com/sql/t-sql/queries/select-transact-sql#group-by
+
+NULL e tratamento de divisão por zero
+A query trata casos em que divisores são 0 usando IIF(... > 0, ..., NULL).
+📚 https://learn.microsoft.com/sql/t-sql/language-elements/null-transact-sql

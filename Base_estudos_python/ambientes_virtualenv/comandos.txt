@@ -1,0 +1,21 @@
+1. Criar o ambiente virtual
+No terminal, navegue até a pasta do seu projeto e execute:
+
+python -m venv venv
+
+2. Ativar o ambiente virtual
+
+No Windows (CMD ou PowerShell):
+venv\Scripts\activate
+
+No Linux/macOS:
+source venv/bin/activate
+
+Selecionar o interpretador no VS Code
+Pressione Ctrl + Shift + P (ou F1) para abrir a paleta de comandos.
+
+Digite e selecione:
+Python: Select Interpreter
+
+Atualizar pip 
+python -m pip install --upgrade pip

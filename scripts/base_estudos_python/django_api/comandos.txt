@@ -1,0 +1,47 @@
+pip install django djangorestframework django-cors-header
+
+## comandos django 
+
+# django Instala o framework Django principal, que permite criar aplicações web de forma rápida, organizada e segura.
+# djangorestframework	Instala o Django REST Framework (DRF), que é uma extensão do Django para criar APIs RESTful com facilidade. Ele adiciona recursos como serialização de dados, autenticação, permissões, etc.
+# django-cors-headers	Permite configurar CORS (Cross-Origin Resource Sharing). Isso é essencial quando o front-end (por exemplo, React ou Flutter Web) estiver hospedado em outro domínio e precisa acessar sua API Django.
+
+## Criar um novo projeto Django
+django-admin startproject nome_do_projeto
+Cria a estrutura base do seu projeto Django com o diretório de configurações.
+
+## Criar um novo app dentro do projeto
+python manage.py startapp nome_do_app
+Um projeto Django pode conter vários apps (por exemplo, um app de usuários, outro de produtos, etc).
+
+## Rodar o servidor local
+python manage.py runserver
+Inicia o servidor de desenvolvimento em http://127.0.0.1:8000.
+
+## Criar o banco de dados inicial (migrations)
+python manage.py migrate
+Aplica as migrations padrão do Django e cria o banco de dados inicial (usando SQLite por padrão).
+
+## Criar uma migration para seu app
+python manage.py makemigrations
+Cria arquivos de migração com base nos modelos (models.py) que você criou ou alterou.
+
+## Aplicar as suas migrations no banco
+python manage.py migrate
+Aplica as migrations que você criou com makemigrations.
+
+## Criar um superusuário (admin)
+python manage.py createsuperuser
+Cria um usuário com acesso ao painel administrativo (/admin).
+
+## Abrir o shell interativo do Django
+python manage.py shell
+Útil para testar códigos, criar objetos no banco, importar modelos etc.
+
+## Ver os apps e migrations disponíveis
+python manage.py showmigrations
+Lista todas as migrations e diz se já foram aplicadas ou não.
+
+## Ver ajuda com todos os comandos
+python manage.py help
+Mostra todos os comandos disponíveis do Django.
